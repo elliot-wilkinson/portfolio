@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;800&family=Open+Sans:wght@300&display=swap');
+
+body{
+  margin: 0;
+  background-color: #EBDA95;
+}
+/* Vertical Navigation Bar */
+nav a{
+  text-decoration: none;
+  padding-right: 10px;
+}
+nav a:link{
+color: darkcyan;
+}
+nav a:visited{
+color: black;
+}
+nav a:hover{
+color: grey;
+}
+nav a:active{
+color: white;
+}
+a:link{
+color: white;
+}
+a:visited{
+color: darkgray;
+}
+a:hover{
+color: blue;
+}
+a:active{
+color: black;
+}
+nav{
+  background-color: #5B3396;
+  border-top: 2px green solid;
+  border-bottom: 2px green solid;
+  padding: 5px;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+nav li{
+  display: inline;
+}
+/* CSS for tablets */
+@media only screen and (max-width: 1024px){
+  h1{
+    font-size: 2em;
+  }
+}
+/* CSS for smartphone */
+@media only screen and (max-width: 768px){
+  h1{
+    font-size: 1.5em;
+  }
+}
+h1{
+  text-align: center;
+  font-size: 4em;
+  color: #5B3396;
+  font-family: treduchet-MS;
+}
+main{
+  max-width: 1000px;
+  margin: 20px auto;
+}
+footer{
+  text-align: center;
+  border-top: 1px solid gray;
+  padding: 10px;
+  background-color: #5B3396;
+  color: white;
+}
+.fa{
+  font-size: 2em;
+  color: white;
+}
+.gallery .preview{
+    width:100%
+    height:auto;
+}
+
+.gallery .gallery-thumbnails img {
+    width:100px;
+    height:75px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+.home-hero{
+  background-image:url(images/spider.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+}

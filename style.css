@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;800&family=Open+Sans:wght@300&display=swap');
+
+body{
+  font-family: Georgia;
+  margin: 0;
+  background-color: #D1D1D1;
+}
+/* Vertical Navigation Bar */
+nav a{
+  text-decoration: none;
+  padding-right: 10px;
+}
+nav a:link{
+color: black;
+}
+nav a:visited{
+color: purple;
+}
+nav a:hover{
+color: grey;
+}
+nav a:active{
+color: blue;
+}
+a:link{
+color: black;
+}
+a:visited{
+color: purple;
+}
+a:hover{
+color: grey;
+}
+a:active{
+color: blue;
+}
+nav{
+  background-image: url(images/victorian-background.jpg);
+  border-top: 2px green solid;
+  border-bottom: 2px green solid;
+  padding: 5px;
+  font-size: 20px;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+nav li{
+  display: inline;
+}
+/* CSS for tablets */
+@media only screen and (max-width: 1024px){
+  h1{
+    font-size: 2em;
+  }
+}
+/* CSS for smartphone */
+@media only screen and (max-width: 768px){
+  h1{
+    font-size: 1.5em;
+  }
+}
+h1{
+  font-family: Brush Script MT;
+  text-align: center;
+  font-size: 4em;
+  color: black;
+}
+main{
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+footer{
+  background-image: url(images/victorian-background.jpg);
+  text-align: center;
+  border-top: 1px solid gray;
+  padding: 10px;
+}
+canvas{
+  margin: 0 auto;
+  border-radius: 25px;
+}
+.logo{
+  display: block;
+  margin: auto;
+}
+.fa{
+  font-size: 4em;
+  color: black;
+}
+.col-sm-12{
+  width: 60%;
+  margin: auto;
+}
