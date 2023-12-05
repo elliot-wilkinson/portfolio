@@ -2,29 +2,33 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="This is an example of a meta description. This will often show up in search results so it is important to write a high quality description for each page of a website">
-		<title>home</title>
+		<meta name="description" content="This a portfolio website made by Elliot Wilkinson.">
+		<title>PORTFOLIO::HOME</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
 		<header>
-			<img src="images/portfolio-logo.png" class="logo" height="92" width="200">
+			<img src="images/portfolio-logo.png" class="logo" height="92" width="202">
 		</header>
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="resume.html">Resume</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="game.html">Game</a></li>
 				</ul>
 			</nav>
+			<div id="home-hero">
+				<h1>About Me</h1>
+			</div>
+
 		<main>
-			<h1>About Me</h1>
-			<div class="container-fluid">
+				<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-6">
 						<div class="column">
                         My name is Elliot Wilkinson and I study Web Design and Computer Programming with an emphasis in web at Saint Paul College in St. Paul, Minnesota. My planned graduation date is May 2024 with the Web Design Certificate and May 2026 with the Computer Programming Degree. I made this website as a portfolio of my skills developing websites.
 						I have taken the following classes at Saint Paul College:
@@ -37,15 +41,66 @@
 						My hobbies include video gaming, reading thriller and fiction,watching movies and TV shows, programming, drawing, biking, and baking.
 						</div>
 					</div>
-					<div class="col-sm-8">
+					<div class="col-sm-6">
 						<div class="column">
 							<img src="images/elliot.jpg" height="542" width="450" alt="photo of Elliot working" class="img-fluid">
 
 						</div>
 					</div>
 				</div>
-	</div>
+	        </div>
+	        <div class="padding">
+	            <div class="container-fluid">
+	            	<div class="row">
+						<div class="col-sm-4">
+							<div class="column">
+								<a href="resume.html">
+								    <i class="fa fa-file-text" aria-hidden="true"></i>
+							    </a>
+							    <h4>Resume</h4>
+							    <p>Check out my resume! I'm always looking for new opportunities.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="column">
+								<a href="portfolio.html">
+									<i class="fa fa-thumb-tack" aria-hidden="true"></i>
+								</a>
+									<h4>Portfolio</h4>
+									<p>Here are website projects that I've worked on.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div>
+								<div class="column">
+									<a href="game.html">
+										<i class="fa fa-gamepad" aria-hidden="true"></i>
+									</a>
+										<h4>JavaScript Game</h4>
+										<p>I made a custome version of the W3 Schools JavaScript Game.</p>
+								</div>
+							</div>
+						</div>
+				    </div>
+				</div>
+		    </div>
+		    <hr>
+		    <h2>Potato</h2>
+		    <p>This is my dog. His name is Potato and at the time of making this he is 7 years old. Enjoy these pictures of him.</p>
+            <div class="gallery">
 
+
+			    <div class="preview">
+			        <img id="preview" src="images/potato-1.jpeg"/>
+			    </div>
+
+			    <div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
+			        <img onclick="document.getElementById('preview').src= document.getElementById('img1').src;" id="img1" src="images/potato-2.jpg" alt="bison"  />
+			        <img onclick="document.getElementById('preview').src = document.getElementById('img2').src;" id="img2" src="images/potato-3.jpg" alt="fallow deer" />
+			        <img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/potato-4.jpg" alt="fox" />
+			        <img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/potato-5.jpg" alt="hedgehog"  />
+			    </div>
+			</div>
 		</main>
 		<footer>
 			<div class="container-fluid">
@@ -58,26 +113,22 @@
 					</div>
 					<div class="col-sm-6">
 						<div class="column">
+							<!--font awesome links-->
 							<h3>Connect With Me</h3>
 							<p>
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
+								<a href="https://www.linkedin.com/in/elliot-wilkinson-31297a296/">
+								    <i class="fa fa-linkedin" aria-hidden="true"></i>
+								</a>
 							</p>
 							<p>
-								<i class="fa fa-github" aria-hidden="true"></i>
+								<a href="https://github.com/elliot-wilkinson">
+								    <i class="fa fa-github" aria-hidden="true"></i>
+							    </a>
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<a href="https://saintpaulcollege.com">
-			<p>
-				<a href="https://saintpaul.edu" target="_blank"> Saint Paul College</a>
-			</p>
-			<p>
-				<a href="mailto:elliot@gmail.com">elliot@gmail.com</a></small> &bull;
-				<a href="tel.1231231234">Call Me</a> &bull;
-				<a href="sms.1231231234">Text Me</a>
-			</p>
 			<small>&copy; Elliot. All rights reserved.</small><br>
 		</footer>
 		<!--jQuery, Popper, and Bootstrap Javascript files-->
